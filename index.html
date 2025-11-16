@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicare - Online Doctor Consultation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <!-- Logo: AI-curated image from Unsplash -->
+                <img src="https://uploads.onecompiler.io/444tx6ykd/444u2shsc/logo.jpeg" alt="Medicare Logo">
+                <span>Medicare</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#how-it-works">How it Works</a></li>
+                    <li><a href="#why-choose-us">Why Us</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#ai-symptom-checker">AI Symptom Checker</a></li> <!-- New Nav Link -->
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#appointment">Book Appointment</a></li>
+                    <li><a href="#receipts" id="receipts-nav-link" style="display: none;">My Appointments</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="auth-controls">
+                    <span id="welcome-message" class="welcome-message" style="display: none;"></span>
+                    <a href="#" id="login-btn" class="btn btn-primary btn-small">Login</a>
+                    <a href="#" id="logout-btn" class="btn btn-secondary btn-small" style="display: none;">Logout</a>
+                </div>
+                <a href="#appointment" class="btn btn-primary book-appointment-btn">Book an Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h1>Your Health, Our Priority.<br>Online Doctor Consultation Made Easy.</h1>
+                <p>Connect with certified doctors from the comfort of your home. Quality healthcare is just a click away.</p>
+                <a href="#appointment" class="btn btn-secondary">Get Started Today</a>
+            </div>
+        </section>
+
+        <section id="about-us" class="about-us-section">
+            <div class="container">
+                <h2>About Medicare</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <!-- About Us Image: AI-curated image from Unsplash -->
+                        <img src="https://uploads.onecompiler.io/444tx6ykd/444u2shsc/about.png" alt="About Us Medical Team">
+                    </div>
+                    <div class="about-text">
+                        <p>Medicare is dedicated to providing accessible, high-quality online healthcare services. Our platform connects you with a network of certified medical professionals, offering consultations, diagnoses, and treatment plans from the comfort and privacy of your home.</p>
+                        <p>We believe that everyone deserves convenient access to expert medical advice. With advanced technology and a patient-first approach, we're transforming the healthcare experience, making it simpler, faster, and more reliable for you and your family.</p>
+                        <a href="#services" class="btn btn-primary">Explore Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <i class="fas fa-user-md service-icon"></i>
+                        <h3>General Consultation</h3>
+                        <p>Talk to a general practitioner for common ailments and health advice.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-stethoscope service-icon"></i>
+                        <h3>Specialist Consultation</h3>
+                        <p>Access specialists in various fields without the need for travel.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-prescription-bottle-alt service-icon"></i>
+                        <h3>Prescription Refills</h3>
+                        <p>Conveniently get your prescriptions refilled online.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-brain service-icon"></i>
+                        <h3>Mental Health Support</h3>
+                        <p>Confidential consultations with mental health professionals.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-flask service-icon"></i>
+                        <h3>Lab Test Interpretation</h3>
+                        <p>Understand your lab results with expert guidance.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-notes-medical service-icon"></i>
+                        <h3>Second Opinions</h3>
+                        <p>Get a professional second opinion on your diagnosis or treatment plan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works-section">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="steps-grid">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <h3>Register & Create Profile</h3>
+                        <p>Sign up easily and set up your personal health profile.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <h3>Choose Your Doctor</h3>
+                        <p>Browse through our certified doctors and select one that fits your needs.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <h3>Start Your Consultation</h3>
+                        <p>Connect via video call, chat, or phone for your online consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-choose-us" class="why-choose-us-section">
+            <div class="container">
+                <h2>Why Choose Medicare?</h2>
+                <div class="why-choose-us-content">
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt feature-icon"></i>
+                            <h3>Certified Professionals</h3>
+                            <p>Access to a network of highly qualified and experienced doctors.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock feature-icon"></i>
+                            <h3>24/7 Availability</h3>
+                            <p>Consult a doctor anytime, anywhere, at your convenience.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-lock feature-icon"></i>
+                            <h3>Secure & Private</h3>
+                            <p>Your health data and consultations are kept strictly confidential.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-hand-holding-heart feature-icon"></i>
+                            <h3>Personalized Care</h3>
+                            <p>Receive tailored medical advice and treatment plans.</p>
+                        </div>
+                    </div>
+                    <div class="why-choose-us-image">
+                        <!-- Why Choose Us Image: AI-curated image from Unsplash -->
+                        <img src="https://uploads.onecompiler.io/444tx6ykd/444u2shsc/doctor%20photo.png" alt="Trusted Care Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="doctors" class="doctors-section">
+            <div class="container">
+                <h2>Meet Our Expert Doctors</h2>
+                <p>Our team of dedicated and experienced medical professionals is here to help you achieve optimal health.</p>
+                <div class="doctor-profiles-grid">
+                    <div class="doctor-profile-card">
+                        <!-- Doctor Image 1: AI-curated image from Unsplash -->
+                        <img src="https://uploads.onecompiler.io/444tx6ykd/444u2shsc/vani%20doctor.jpg" alt="Dr. Vani Tiwari">
+                        <h3>Dr. Vani Tiwari</h3>
+                        <p>General Practitioner</p>
+                        <p class="specialty">Expert in family medicine and preventive care.</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <!-- Doctor Image 2: AI-curated image from Unsplash -->
+                        <img src="https://uploads.onecompiler.io/444tx6ykd/444u2shsc/aman%20doctor.jpg" alt="Dr. Aman Abhishek">
+                        <h3>Dr. Aman Abhishek</h3>
+                        <p>Pediatrician</p>
+                        <p class="specialty">Specializing in child health and development.</p>
+                    </div>
+                    <div class="doctor-profile-card">
+                        <!-- Doctor Image 3: AI-curated image from Unsplash -->
+                        <img src="https://uploads.onecompiler.io/444tx6ykd/444u2shsc/rahul%20doctor.jpg" alt="Dr. Rahul Raj">
+                        <h3>Dr. Rahul Raj</h3>
+                        <p>Dermatologist</p>
+                        <p class="specialty">Focus on skin conditions and cosmetic dermatology.</p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary">View All Doctors</a>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2>What Our Patients Say</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p>"Medicare has revolutionized how I access healthcare. The doctors are knowledgeable and compassionate. Highly recommend!"</p>
+                        <div class="patient-info">
+                            <!-- Patient Image 1: AI-curated image from Unsplash -->
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjVlMjZ8MHwxfHNlYXJjaHwxfHxwYXRpZW50JTIwcG9ydHJhaXQlMjAxfGVufDB8fHx8MTY3NjU0NTg3NA&ixlib=rb-4.0.3&q=80&w=50" alt="Patient 1">
+                            <span>Jane Doe</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"So convenient! I got a prescription refill without leaving my home. The process was smooth and efficient."</p>
+                        <div class="patient-info">
+                            <!-- Patient Image 2: AI-curated image from Unsplash -->
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjVlMjZ8MHwxfHNlYXJjaHwxfHxwYXRpZW50JTIwcG9ydHJhaXQlMjAyfGVufDB8fHx8MTY3NjU0NTkwMA&ixlib=rb-4.0.3&q=80&w=50" alt="Patient 2">
+                            <span>John Smith</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Finally, a platform where I can get specialist advice quickly. The video consultation quality was excellent."</p>
+                        <div class="patient-info">
+                            <!-- Patient Image 3: AI-curated image from Unsplash -->
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjVlMjZ8MHwxfHNlYXJjaHwxfHxwYXRpZW50JTIwcG9ydHJhaXQlMjAzfGVufDB8fHx8MTY3NjU0NTkyNg&ixlib=rb-4.0.3&q=80&w=50" alt="Patient 3">
+                            <span>Emily R.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Section: AI Symptom Checker -->
+        <section id="ai-symptom-checker" class="ai-symptom-checker-section">
+            <div class="container">
+                <h2>AI Symptom Checker</h2>
+                <p>Describe your symptoms below, and our AI will provide preliminary insights. Please remember this is not a substitute for professional medical advice.</p>
+                <div class="symptom-checker-tool">
+                    <div class="form-group">
+                        <label for="symptoms-input">What are your symptoms?</label>
+                        <textarea id="symptoms-input" rows="6" placeholder="e.g., 'I have a fever, sore throat, and body aches.'"></textarea>
+                    </div>
+                    <button id="analyze-symptoms-btn" class="btn btn-primary btn-large">Analyze Symptoms</button>
+                    <div id="ai-response" class="ai-response-box" style="display: none;">
+                        <h3>AI Insights:</h3>
+                        <p id="ai-diagnosis-text"></p>
+                        <p class="disclaimer">Disclaimer: This AI tool provides general information and is not a substitute for professional medical diagnosis or treatment. Always consult a qualified healthcare provider for any health concerns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="accordion-header">
+                            How do online consultations work? <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Online consultations allow you to connect with a doctor via video call, audio call, or chat from your computer or smartphone. You can discuss your symptoms, receive diagnoses, and get prescriptions or referrals.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="accordion-header">
+                            Are the doctors certified? <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes, all doctors on the Medicare platform are fully licensed, certified, and have extensive experience in their respective fields.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="accordion-header">
+                            Is my personal information secure? <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Absolutely. We use advanced encryption and adhere to strict privacy regulations (like HIPAA) to ensure your personal and medical information is completely secure and confidential.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="accordion-header">
+                            What if I need a prescription? <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>If a doctor determines a prescription is necessary, it can be electronically sent to your preferred pharmacy for pickup or delivery, depending on local regulations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <h2>Health Insights & Blog</h2>
+                <p>Stay informed with our latest articles, health tips, and news.</p>
+                <div class="blog-grid">
+                    <div class="blog-post-card">
+                         <!-- Blog Image 1: AI -curated image from /Unsplash -->
+                         <img src= "https://uploads.onecompiler.io/444tx6ykd/444u2shsc/vani%20doctor%20doctor%204.jpg" alt= "blog post 1">
+                        <h3>Understanding Seasonal Allergies</h3>
+                        <p class="post-meta">By Dr. Vani Tiwari | Nov 18, 2025</p>
+                        <p>Learn about common triggers, symptoms, and effective ways to manage seasonal allergies...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="blog-post-card">
+                        <!-- Blog Image 2: AI-curated image from Unsplash -->
+                        <img src="https://uploads.onecompiler.io/444tx6ykd/444u2shsc/aman%20doctor.jpg" alt="Blog Post 2">
+                        <h3>Tips for Better Sleep Hygiene</h3>
+                        <p class="post-meta">By Dr. Aman Abhishek | Nov 18, 2025</p>
+                        <p>Discover practical tips and habits to improve your sleep quality and overall well-being...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="blog-post-card">
+                        <!-- Blog Image 3: AI-curated image from Unsplash -->
+                        <img src="https://uploads.onecompiler.io/444tx6ykd/444u2shsc/rahul%20horizontal.jpg" alt="Blog Post 3">
+                        <h3>The Importance of Regular Check-ups</h3>
+                        <p class="post-meta">By Dr. Rahul Raj | Nov 18, 2025</p>
+                        <p>Why preventive care is crucial for maintaining long-term health and detecting issues early...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-secondary">View All Articles</a>
+            </div>
+        </section>
+
+        <section id="appointment" class="appointment-section">
+            <div class="container">
+                <h2>Book Your Online Appointment</h2>
+                <p>Fill out the form below to schedule a consultation with one of our expert doctors.</p>
+                <form id="appointment-form" class="appointment-form">
+                    <div class="form-group">
+                        <label for="patient-name">Your Full Name:</label>
+                        <input type="text" id="patient-name" name="patientName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patient-email">Your Email:</label>
+                        <input type="email" id="patient-email" name="patientEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctor-select">Choose a Doctor:</label>
+                        <select id="doctor-select" name="doctor" required>
+                            <option value="">-- Select a Doctor --</option>
+                            <option value="Dr. Vani Tiwari (GP)">Dr. Vani Tiwari (General Practitioner)</option>
+                            <option value="Dr. Aman Abhishek (Pediatrician)">Dr. Aman Abhishek (Pediatrician)</option>
+                            <option value="Dr. Rahul Raj (Dermatologist)">Dr. Rahul Raj (Dermatologist)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="appointment-date">Preferred Date:</label>
+                        <input type="date" id="appointment-date" name="appointmentDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="appointment-time">Preferred Time:</label>
+                        <input type="time" id="appointment-time" name="appointmentTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">Reason for Visit:</label>
+                        <textarea id="reason" name="reason" rows="5" placeholder="Briefly describe your symptoms or reason for consultation..." required></textarea>
+                        <p id="doctor-suggestion" class="doctor-suggestion-text" style="display: none;"><i class="fas fa-lightbulb"></i> AI Suggestion: <span id="suggested-doctor-type"></span></p>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Confirm Appointment</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="receipts" class="receipts-section" style="display: none;">
+            <div class="container">
+                <h2>My Appointments & Receipts</h2>
+                <p>Here you can view your past and upcoming appointments, along with their receipts.</p>
+                <div class="receipt-grid">
+                    <div class="receipt-card">
+                        <h3>Appointment #001</h3>
+                        <p><strong>Doctor:</strong> Dr. Vani Tiwaro</p>
+                        <p><strong>Date:</strong> 2025-11-18</p>
+                        <p><strong>Time:</strong> 10:00 AM</p>
+                        <p><strong>Service:</strong> General Consultation</p>
+                        <p><strong>Amount:</strong> $100.00</p>
+                        <p class="status paid">Status: Paid</p>
+                        <button class="btn btn-secondary btn-small">View Receipt</button>
+                    </div>
+                    <div class="receipt-card">
+                        <h3>Appointment #002</h3>
+                        <p><strong>Doctor:</strong> Dr. Aman Abhishek</p>
+                        <p><strong>Date:</strong> 2025-11-18</p>
+                        <p><strong>Time:</strong> 02:30 PM</p>
+                        <p><strong>Service:</strong> Pediatric Check-up</p>
+                        <p><strong>Amount:</strong> $75.00</p>
+                        <p class="status paid">Status: Paid</p>
+                        <button class="btn btn-secondary btn-small">View Receipt</button>
+                    </div>
+                    <div class="receipt-card">
+                        <h3>Appointment #003</h3>
+                        <p><strong>Doctor:</strong> Dr. Rahul Raj</p>
+                        <p><strong>Date:</strong> 2025-11-18</p>
+                        <p><strong>Time:</strong> 11:00 AM</p>
+                        <p><strong>Service:</strong> Dermatology Follow-up</p>
+                        <p><strong>Amount:</strong> $60.00</p>
+                        <p class="status pending">Status: Pending</p>
+                        <button class="btn btn-secondary btn-small">View Receipt</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions or need assistance? Reach out to us!</p>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Our Details</h3>
+                        <p><i class="fas fa-envelope"></i> Email: omjee7777@gmail.com</p>
+                        <p><i class="fas fa-phone-alt"></i> Phone: +1916207131572</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Address: 123 Health St, Wellness City, HC 98765</p>
+                        <div class="social-media">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <form id="contact-form" class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <div class="form-group">
+                            <label for="contact-name">Your Name:</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Your Email:</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject:</label>
+                            <input type="text" id="contact-subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message:</label>
+                            <textarea id="contact-message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="cta-section">
+            <div class="container">
+                <h2>Ready to Experience Convenient Healthcare?</h2>
+                <p>Book your online consultation today and take the first step towards better health.</p>
+                <a href="#appointment" class="btn btn-primary btn-large">Book Your Appointment Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>Medicare</span>
+                    <p>Your trusted partner for online healthcare.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#doctors">Doctors</a></li>
+                        <li><a href="#how-it-works">How it Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-footer">
+                    <h3>Contact Us</h3>
+                    <p>Email: omjee7777@gmail.com</p>
+                    <p>Phone: +916207131572</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Medicare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
